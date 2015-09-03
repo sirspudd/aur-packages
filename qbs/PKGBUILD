@@ -23,7 +23,7 @@ prepare() {
 
 build() {
   cd "$srcdir/qbs-src-$pkgver"
-  qmake qbs.pro QBS_INSTALL_PREFIX=/usr
+  qmake QBS_INSTALL_PREFIX=/usr qbs.pro 
   make
 }
 
